@@ -18,13 +18,16 @@ To solve this, centralized governance is implemented using AWS native services.
 
 Organization Structure:
 
-Root
- ├── Dev OU
- │      └── Dev Account
- ├── Test OU
- │      └── Test Account
- └── Prod OU
-        └── Prod Account
+ Root
+│
+├── Dev OU
+│   └── Dev Account
+│
+├── Test OU
+│   └── Test Account
+│
+└── Prod OU
+    └── Prod Account
 <img width="1600" height="840" alt="image" src="https://github.com/user-attachments/assets/897111a2-d01a-4bcd-a2e4-e61d240bc8fc" />
 
 
