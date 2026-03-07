@@ -18,7 +18,7 @@ To solve this, centralized governance is implemented using AWS native services.
 
 Organization Structure:
 
- Root
+   Root
 │
 ├── Dev OU
 │   └── Dev Account
