@@ -55,27 +55,27 @@ Organization Structure:
 1. Go to AWS Organizations.
 2. click on Add aws account
 3. create a Account
-   Devaccount
+* Devaccount
    <img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/1c72a747-0d1f-4692-81d7-d74e7a0ffee4" />
 
-   ProdAccount
+* ProdAccount
    <img width="1600" height="840" alt="image" src="https://github.com/user-attachments/assets/02a276dd-04d3-478c-8762-cec2d418e49c" />
 
-   TestAccount
+* TestAccount
    <img width="1600" height="840" alt="image" src="https://github.com/user-attachments/assets/e0a4b0e0-cec6-4465-9da1-a9f4352b35e4" />
 
 4. Move member accounts under the respective OUs.
-   DevAccount---->Dev-OU
-   ProdAccount---->Prod-OU
-   TestAccount----->Test-OU
+   * DevAccount---->Dev-OU
+   * ProdAccount---->Prod-OU
+   * TestAccount----->Test-OU
 
 # Step 3 – Create Service Control Policies (SCP)
 # 1. Deny Large EC2 Instances in Dev Environment
-   Open AWS Organizations.
-   Select policy
-   Open Service Control Policies
-   Click on create Service Control Policies 
-Policies-->
+   * Open AWS Organizations.
+   * Select policy
+   * Open Service Control Policies
+   * Click on create Service Control Policies 
+   * Add a Policies
 ```
 {
   "Version": "2012-10-17",
@@ -104,11 +104,11 @@ Attached to:
 Dev-OU
 
 # 2. Prevent Disabling CloudTrail
-   Open AWS Organizations.
-   Select policy
-   Open Service Control Policies
-   Click on create Service Control Policies
-   Policies-->
+   * Open AWS Organizations.
+   * Select policy
+   * Open Service Control Policies
+   * Click on create Service Control Policies
+   * Add a Policies
 ```
 {
   "Version": "2012-10-17",
@@ -132,12 +132,11 @@ Attached to:
 root
 
 # 3. Restrict AWS Regions
-Open AWS Organizations.
-Select policy
-Open Service Control Policies
-Click on create Service Control Policies
-   
-Policies-->
+  * Open AWS Organizations.
+  * Select policy
+  * Open Service Control Policies
+  * Click on create Service Control Policies
+  * Add a Policies
 Allowed Regions:
 ap-south-1 (Mumbai)
 us-east-1 (N. Virginia)
