@@ -13,11 +13,11 @@ An enterprise organization manages multiple AWS accounts for different teams:
 3. Production Team
 However, there are no centralized restrictions. Developers are launching expensive resources, security policies are inconsistent, and compliance requirements are not enforced.
 To solve this, centralized governance is implemented using AWS native services.
-
+---
 # Architecture
 
 Organization Structure:
-
+```
    Root
 │
 ├── Dev OU
@@ -28,16 +28,17 @@ Organization Structure:
 │
 └── Prod OU
     └── Prod Account
+```
 <img width="1600" height="840" alt="image" src="https://github.com/user-attachments/assets/897111a2-d01a-4bcd-a2e4-e61d240bc8fc" />
-
-
+---
+---
 # Technologies Used
 
 1. AWS Organizations
 2. Service Control Policies (SCP)
 3. IAM
 4. CloudTrail
-
+---
 # Step 1 – Create AWS Organization
 
 1. Login to the AWS Management Account.
@@ -75,6 +76,7 @@ Prod OU
    Open Service Control Policies
    Click on create Service Control Policies 
 Policies-->
+```
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -94,6 +96,7 @@ Policies-->
     }
   ]
 }
+```
 <img width="1600" height="840" alt="image" src="https://github.com/user-attachments/assets/6b40ce81-4990-4ff2-af35-827cf665dc15" />
 
 Purpose: Prevent developers from launching expensive EC2 instances.
@@ -106,6 +109,7 @@ Dev-OU
    Open Service Control Policies
    Click on create Service Control Policies
    Policies-->
+```
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -120,6 +124,7 @@ Dev-OU
     }
   ]
 }
+```
 <img width="1600" height="840" alt="image" src="https://github.com/user-attachments/assets/a7aa4b53-7c84-418a-8341-db69b6fb4fc7" />
 
 Purpose: Ensure audit logs cannot be disabled.
@@ -136,7 +141,7 @@ Policies-->
 Allowed Regions:
 ap-south-1 (Mumbai)
 us-east-1 (N. Virginia)
-
+```
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -162,13 +167,14 @@ us-east-1 (N. Virginia)
     }
   ]
 }
-
+```
 <img width="1600" height="840" alt="image" src="https://github.com/user-attachments/assets/e8303452-8814-46a2-877e-ec6f984a7809" />
 Purpose: Allow resource creation only in approved regions.
 Attached to:
 root
 
 # Final Governance Model
+```
 Root
  ├── SCP
  │    ├── Protect-CloudTrail
@@ -184,7 +190,7 @@ Root
  │
  └── Prod-OU
       └── ProdAccount
-
+```
 # All Policies are created
 <img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/04be67d5-b7c3-402f-afdf-646e86c102a6" />
 
