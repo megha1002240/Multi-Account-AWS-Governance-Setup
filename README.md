@@ -1,4 +1,4 @@
-<img width="1600" height="840" alt="image" src="https://github.com/user-attachments/assets/52b2cdc5-7951-4956-8095-dbbf0a83efa6" /># Multi-Account-AWS-Governance-Setup using AWS Organizations & SCP
+# Multi-Account-AWS-Governance-Setup using AWS Organizations & SCP
 # Project Overview
 
 This project demonstrates how to implement centralized governance across multiple AWS accounts using AWS Organizations, Organizational Units (OUs), and Service Control Policies (SCPs).
@@ -31,23 +31,23 @@ Organization Structure:
 ```
 <img width="1600" height="840" alt="image" src="https://github.com/user-attachments/assets/897111a2-d01a-4bcd-a2e4-e61d240bc8fc" />
 ---
----
+
 # Technologies Used
 
 1. AWS Organizations
 2. Service Control Policies (SCP)
 3. IAM
 4. CloudTrail
----
+
 # Step 1 – Create AWS Organization
 
 1. Login to the AWS Management Account.
 2. Open AWS Organizations.
 3. Enable All Features.
 # Create Organizational Units:
-Dev OU
-Test OU
-Prod OU
+* Dev OU
+* Test OU
+* Prod OU
 
 <img width="1600" height="840" alt="image" src="https://github.com/user-attachments/assets/ae056600-188b-4281-987e-63610bdb38c9" />
 
