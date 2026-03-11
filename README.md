@@ -13,7 +13,7 @@ An enterprise organization manages multiple AWS accounts for different teams:
 3. Production Team
 However, there are no centralized restrictions. Developers are launching expensive resources, security policies are inconsistent, and compliance requirements are not enforced.
 To solve this, centralized governance is implemented using AWS native services.
----
+
 # Architecture
 
 Organization Structure:
@@ -234,7 +234,5 @@ Author
 Megha Patil
 Cloud & DevOps Engineer
 Pune, India
+
 ---
-
-
-
