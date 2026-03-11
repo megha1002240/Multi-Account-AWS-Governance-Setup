@@ -15,6 +15,7 @@ However, there are no centralized restrictions. Developers are launching expensi
 To solve this, centralized governance is implemented using AWS native services.
 
 # Architecture
+![Uploading image.png…]()
 
 Organization Structure:
 ```
